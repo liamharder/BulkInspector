@@ -45,7 +45,6 @@ else:
         if (APIkeys[key] == ""): #If the key is blank/no API key was provided
             print("ERROR: No API key provided for service ["+key+"]. Please add an API key to APIkeys.json. Continuing to check other API keys...")
             keysmissing+= 1
-            APIkeys.pop(key) #Remove this service from the list of usable services
         else:
             print("Key present for service ["+key+"].")
             keyspresent+= 1
